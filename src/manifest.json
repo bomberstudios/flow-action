@@ -1,0 +1,22 @@
+{
+  "$schema": "https://raw.githubusercontent.com/BohemianCoding/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "my-command",
+      "identifier": "flow-action.my-command-identifier",
+      "script": "./my-command.js",
+      "handlers": {
+        "actions": {
+          "HandlerLostFocus": "onHandlerLostFocus"
+        }
+      }
+    }
+  ],
+  "menu": {
+    "title": "flow-action",
+    "items": [
+      "flow-action.my-command-identifier"
+    ]
+  }
+}
